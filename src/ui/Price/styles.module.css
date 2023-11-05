@@ -1,0 +1,9 @@
+.priceContainer {
+  background: var(--first-color);
+  color: var(--first-font-color);
+  padding: 10px 20px;
+  user-select: none;
+  border-radius: 5px;
+  display: inline;
+  font-size: larger;
+}

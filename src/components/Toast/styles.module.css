@@ -1,0 +1,39 @@
+.toast {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: black 0px 1px 3px 0px;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  opacity: 1;
+}
+
+.toastCloseBtn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0;
+  line-height: 1;
+  height: 1em;
+  width: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+@keyframes toast-to-top {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast {
+  animation: 0.5s toast-to-top;
+}

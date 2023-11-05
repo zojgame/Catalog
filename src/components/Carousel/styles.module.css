@@ -1,0 +1,36 @@
+.container {
+  width: 800px;
+  height: 550px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.window {
+  height: 100%;
+  width: 750px;
+  overflow: hidden;
+}
+
+.itemsContainer {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.imageContainer {
+  height: 550px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.image {
+  display: inline;
+  height: inherit;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: x-large;
+}

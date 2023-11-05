@@ -1,0 +1,29 @@
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  padding: 10px 20px;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+  color: black;
+}
+
+.color:hover {
+  background: var(--second-color);
+  color: var(--second-font-color);
+}
+
+.selectedColor {
+  background: var(--first-color);
+  color: var(--first-font-color);
+}
+
+.colorsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: larger;
+}

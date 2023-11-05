@@ -1,0 +1,35 @@
+.sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.size {
+  padding: 10px 20px;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+  color: black;
+}
+
+.size:hover:not(.disabledSize) {
+  background: var(--second-color);
+  color: var(--second-font-color);
+}
+
+.selectedSize {
+  background: var(--first-color);
+  color: var(--first-font-color);
+}
+
+.disabledSize {
+  background: none;
+  cursor: not-allowed;
+  color: var(--first-font-color);
+}
+
+.sizesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: larger;
+}

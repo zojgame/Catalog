@@ -1,0 +1,32 @@
+.buttonContainer {
+  position: relative;
+  display: inline;
+  padding: 10px 30px;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--first-color);
+  color: var(--first-font-color);
+}
+
+.buttonContainer:hover:not(.buttonDisabled) {
+  background: var(--second-color);
+  color: var(--second-font-color);
+}
+
+.buttonDisabled {
+  background: none;
+  cursor: not-allowed;
+  color: var(--first-font-color);
+}
+
+.itemsCount {
+  position: absolute;
+  left: 55px;
+  bottom: 20px;
+  user-select: none;
+}
+
+.icon {
+  margin: 0;
+}

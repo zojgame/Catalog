@@ -1,0 +1,26 @@
+/* .toastCloseBtn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0;
+  line-height: 1;
+  height: 1em;
+  width: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+} */
+
+.toastList {
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  max-height: 100vh;
+}
+
+.toastListTopRight {
+  top: 0;
+  right: 0;
+}

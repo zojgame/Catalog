@@ -1,0 +1,30 @@
+.header {
+  background: var(--first-color);
+  display: flex;
+  height: 70px;
+  padding: 0px 35px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  color: var(--first-font-color);
+  margin-bottom: 20px;
+}
+
+.navigation {
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  height: 100%;
+  padding: 0 10px;
+  font-size: larger;
+}
+
+.link:hover {
+  color: var(--second-font-color);
+  background: var(--second-color);
+}
