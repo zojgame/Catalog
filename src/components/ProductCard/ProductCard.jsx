@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
 const ProductCardComponent = ({ product }) => {
-  const path = `../../..${product?.colors[0].images?.[0]}`;
+  const path = `${product?.colors[0].images?.[0]}`;
   const navigate = useNavigate();
   const handleOnCardClick = () => {
     navigate(`/item/${product.id}`);

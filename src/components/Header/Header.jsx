@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import styles from "./styles.module.css";
 import { useProducts } from "../../hooks";
 import useCatalog from "../../store/useCatalog";
-// import { ToastListComponent } from "../ToastsList/ToastsList";
 
 const HeaderComponent = () => {
   const navigate = useNavigate();

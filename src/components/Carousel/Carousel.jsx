@@ -5,7 +5,6 @@ import styles from "./styles.module.css";
 
 const CarouselComponent = ({ images, name }) => {
   const [offset, setOffset] = useState(0);
-  const path = "../../..";
   const handleRightArrowClick = () => {
     setOffset((currentOffset) => {
       if (currentOffset > (images.length - 1) * ITEM_WIDTH * -1) {
@@ -38,11 +37,10 @@ const CarouselComponent = ({ images, name }) => {
           }}
         >
           {images?.map((image) => {
-            const currentPath = `${path}${image}`;
 
             return (
               <div className={styles.imageContainer} key={image}>
-                <img className={styles.image} src={currentPath} alt={name} />
+                <img className={styles.image} src={image} alt={name} />
               </div>
             );
           })}

@@ -8,7 +8,6 @@ const BasketPage = () => {
   const [products, _, deleteProducts] = useProducts();
   const { deleteBasketItem } = useCatalog();
   const { showToast, toasts, removeToast } = useToast();
-  const path = "../../..";
 
   const wholePrice = products.reduce(
     (acc, cur) => parseFloat(cur.price) + acc,
@@ -27,7 +26,7 @@ const BasketPage = () => {
     <div className={styles.itemsContainer}>
       {products.map((product) => {
         const id = `${product.id}${product.colorId}${product.size.id}`;
-        const imagePath = `${path}${product?.images?.[0]}`;
+        const imagePath = `${product?.images?.[0]}`;
 
         return (
           <div key={id} className={styles.item}>
